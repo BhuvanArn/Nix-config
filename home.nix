@@ -1,8 +1,6 @@
-{ config, pkgs, ... }:
+inputs@{ config, pkgs, pkgs-latest, vscode-extensions, ... }:
 
-{
-  # Home Manager needs a bit of information about you and the paths it should
-  # manage.
+rec {
   home.username = "barnaud";
   home.homeDirectory = "/home/barnaud";
 
@@ -14,6 +12,13 @@
   # want to update the value, then make sure to first check the Home Manager
   # release notes.
   home.stateVersion = "24.05"; # Please read the comment before changing.
+
+
+  imports = [
+
+    # for future use
+    # ./modules/vscode.nix
+  ];
 
   programs.bash = {
     enable = true;
