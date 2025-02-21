@@ -15,6 +15,7 @@ rec {
 
 
   imports = [
+    ./modules/bat.nix
 
     # for future use
     # ./modules/vscode.nix
