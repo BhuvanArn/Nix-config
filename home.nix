@@ -27,6 +27,7 @@
       gpl = "git pull";
       poule = "git pull";
       pelle = "git pull";
+      c = "clear";
 
       modifhome = "code ~/.config/home-manager/home.nix";
       modifconf = "code /etc/nixos/configuration.nix";
